@@ -72,5 +72,5 @@ async def game(ctx, guess, max):
 for extension in extensions:
 		  bot.load_extension(extension)  # Loads every extension.
 
-token = "OTU4MjAwNTQ4NzAyNzAzNzQ3.YkJ3zQ.alj8rC1Vsuqay_va5PgfxbOzE_c" 
+token = "put your token here" 
 bot.run(token)  # Starts the bot
