@@ -1,4 +1,5 @@
 from discord.ext import commands
+#ok so i screwed up you need the cogs folder
 
 bot = commands.Bot(
 	command_prefix="!",  # Change to prefix
