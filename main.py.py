@@ -1,8 +1,12 @@
 from discord.ext import commands
-#ok so i screwed up you need the cogs folder
+__author__ = 'Ongenix - github.com/Ongenix/Simple-Discord-Nuker'
+
+# Default prefix = !
+# Help command = !help
+# You can fork this just credit me unless you make changes.
 
 bot = commands.Bot(
-	command_prefix="!",  # Change to prefix
+	command_prefix="!",  # Change to any prefix
 	case_insensitive=True  
 )
 bot.remove_command("help")
@@ -15,9 +19,6 @@ async def on_ready():
     print("Default prefix: !")
     print("Commands: do \033[4m\033[1m!help\033[0m\033[0m in Discord")
 
-extensions = [
-	'cogs.cog_example'  # discord.py does not work if I don't have this
-]
 @bot.command()
 async def help(ctx):
   await ctx.send("--Bot Commands--")
@@ -68,10 +69,6 @@ async def game(ctx, guess, max):
     await ctx.send("Nice! Correct.")
   else:
     await ctx.send("RIP! Wrong..")
-
-
-for extension in extensions:
-		  bot.load_extension(extension)  # Loads every extension.
 
 token = "put your token here" 
 bot.run(token)  # Starts the bot
