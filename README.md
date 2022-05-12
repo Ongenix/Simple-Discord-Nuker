@@ -13,7 +13,7 @@
 4. !nuke - deletes all channels and adds a channel called #get-nuked
 5. !nuke2 - deletes all channels + adds a channel of your choice = example: !nuke2 i+love+dogs
 6. !game - plays a guessing game = usage: !game 5 10 (the 5 is your guess, the 10 is the max. Every !game command has a different random number)
-7. !spamchannel - spams a channal = example: !spamchannel hello+world 10
-    # Remember! In the nuke2 & spam & the !spamchannel command spaces are replaced with +
+8. !spamchannel - spams a channal = example: !spamchannel hello+world 10
+Remember! In the nuke2 & spam & the !spamchannel command spaces are replaced with +
 # --Requests--
 https://ongenixmail.wixsite.com/website
