@@ -1,3 +1,4 @@
+Please only use this on your own server, I am not responsible for anything you do with this.
 # Simple-Discord-Nuker
 # ⭐ for more stuff
 # --Setup--
