@@ -1,4 +1,5 @@
 Please only use this on your own server, I am not responsible for anything you do with this.
+# This nuker only deletes channels and spams, this is recoverable damage.
 # Simple-Discord-Nuker
 # ⭐ for more stuff
 # --Setup--
